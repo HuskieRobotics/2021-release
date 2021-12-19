@@ -1,0 +1,3 @@
+swerve_math1.jpg: displays translation vector for each wheel (same vector as the tilt of joystick)
+swerve_math2.jpg: displays rotation vector for each wheel (wheels travel in a circle, vectors are perpendicular to the diagonal of the robot's rectangular chassis. Twist of joystick controls the magnitude of each rotation vector)
+swerve_math3.jpg: adds both the translation vector and rotation vector for each wheel

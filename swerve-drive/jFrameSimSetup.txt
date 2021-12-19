@@ -1,0 +1,17 @@
+Create a file in test\java\frc\robot that will contain your jFrame code
+
+Paste this in the configurations section of .vscode\launch.json (make sure to add commas to seperate this configuration from other configurations, replace SwerveSimRunner with your own filename):
+{
+    "type": "java",
+    "name": "Launch SwerveSimRunner",
+    "request": "launch",
+    "mainClass": "frc.robot.SwerveSimRunner",
+    "projectName": "InfiniteRecharge2021",
+    "cwd": "${workspaceFolder}/build/tmp/jniExtractDir",
+    "vmArgs": [ "-Djava.library.path=${workspaceFolder}/build/tmp/jniExtractDir" ],
+    "env": { "LD_LIBRARY_PATH": "${workspaceFolder}/build/tmp/jniExtractDir" ,
+    "DYLD_LIBRARY_PATH": "${workspaceFolder}/build/tmp/jniExtractDir" }
+}
+
+See SwerveSimRunner.java for example code
+If vscode says jniExtractDir does not exist, build robot code
